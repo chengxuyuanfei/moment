@@ -2,19 +2,11 @@
 #include <unistd.h>
 #include <time.h>
 #include <sys/time.h>
-#include "c_time.h"
+#include "unit_test.h"
 
 int main(void)
 {
-	int count = 0;
-	for (count = 0; count < 1000; count ++)
-	{
-		TIMESPAN ts;
-		if (ts_create_timespan(&ts) == -1)
-			printf("create timespan error\n");
-		ts_update_print_timespan(&ts);
-		ts_print_timespan_nanosecond(&ts);
-	}
+	unit_test(0, NULL);
 
 	return 0;
 }
