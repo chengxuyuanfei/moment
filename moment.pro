@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.c \
     example-suite.c \
-    unit_test.c
+    unit_test.c \
+    c_time_format_conversion.c
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -13,7 +14,8 @@ qtcAddDeployment()
 HEADERS += \
     greatest.h \
     unit_test.h \
-    c_timespan.h
+    c_timespan.h \
+    c_time_format_conversion.h
 
 DISTFILES += \
     moment.pro.user

@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include "greatest.h"
 #include "c_timespan.h"
+#include "c_time_format_conversion.h"
 
 void unit_test(int argc, char **argv);
 char *stringRand(uint32_t length);
